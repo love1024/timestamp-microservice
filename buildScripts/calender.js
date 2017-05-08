@@ -5,6 +5,7 @@ const months = {1:"January",2:"Febuary",3:"March",
 
 const days = [31,28,31,30,31,30,31,30,31,30,31,30];
 
+//Get number of leap year between two years
 exports.getLeapYearsBetween = function (start,end) {
     let leap = 0;
     for(var i=start;i<=end;i++) {
@@ -14,6 +15,7 @@ exports.getLeapYearsBetween = function (start,end) {
     return leap;
 }
 
+//check if given year is leap or not
 exports.isLeap = function (year) {
     if(year%100 == 0) {
         return year%400 == 0;
@@ -22,6 +24,7 @@ exports.isLeap = function (year) {
     }
 }
 
+//get month number by its name
 exports.getMonthNumber = function (month) {
     for(let m in months){
         if(months[m] == month)
@@ -30,6 +33,7 @@ exports.getMonthNumber = function (month) {
     return null;
 }
 
+//Get number of days till given month
 exports.getDaysTillMonth = function(month) {
     let totalDays = 0;
     for(var i=0;i<month-1;i++)
@@ -37,6 +41,7 @@ exports.getDaysTillMonth = function(month) {
     return totalDays;
 }
 
+//Get number of month till given days
 exports.getMonthTillDays = function(day) {
     let month = 0;
     for(let i=0;i<12;i++) {
@@ -48,6 +53,7 @@ exports.getMonthTillDays = function(day) {
     return month;
 }
 
+//get month name by index
 exports.getMonthName = function(month) {
     return months[month];
 }
