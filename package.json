@@ -15,7 +15,12 @@
   "author": "Lovepreet",
   "license": "MIT",
   "dependencies": {
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "1.0.0",
+    "babel-cli": "6.16.0",
+    "babel-core": "6.17.0",
+    "babel-loader": "6.2.5",
+    "babel-preset-latest": "6.16.0",
+    "babel-register": "6.16.3"
   },
   "devDependencies": {
     "babel-cli": "6.16.0",
