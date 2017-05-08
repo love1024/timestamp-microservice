@@ -2,6 +2,7 @@
   "name": "timestamp",
   "version": "1.0.0",
   "description": "timestamp api",
+  "main":"buildScripts/srcServer.js",
   "scripts": {
       "start":"npm-run-all --parallel  open:src lint:watch ",
       "security-check":"nsp check",
