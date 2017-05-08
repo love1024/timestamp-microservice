@@ -11,7 +11,7 @@ const port = 2500;
 //creating server and parsing the request
 const server = http.createServer(function(req,res){
    let date = url.parse(req.url).pathname.slice(1);
-
+	console.log(req);
    //if empty pathname then go to homepage
    if(date == '' || date == 'favicon.ico') {
      fs.readFile(path.join(__dirname,'../src/index.html'),function(err,data) {
